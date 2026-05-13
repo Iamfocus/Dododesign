@@ -1,0 +1,14 @@
+node_modules
+.next
+.npm-cache
+tmp
+stderr.log
+.ftp-deploy-sync-state.json
+tsconfig.tsbuildinfo
+.DS_Store
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

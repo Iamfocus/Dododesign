@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  src: url("/fonts/HelveticaNeue-Roman.otf");
+}
+
+@font-face {
+  font-family: "Helvetica Neue bold";
+  font-weight: 700;
+  src: url("/fonts/HelveticaNeueBold.otf");
+}
+
+@font-face {
+  font-family: "Helvetica Neue medium";
+  font-weight: 500;
+  src: url("/fonts/HelveticaNeueMedium.otf");
+}
+
+@font-face {
+  font-family: "Helvetica Neue light";
+  font-weight: 300;
+  src: url("/fonts/HelveticaNeue-Light.otf");
+}
+
+@theme inline {
+  /* --color-*: initial; */
+  --color-dodo-yellow: #f1b130;
+  --color-dodo-grey-2: #f7f7f7;
+  --color-dodo-grey-3: #656e76;
+  --color-dodo-black: #1d2328;
+  --color-black: #34393e;
+  --color-black-70: #616569;
+  --color-text: #a5a7a9;
+  --color-text-2: #959595;
+
+  /* --font-*:inital */
+  --font-inter: "Inter", san-serif;
+  --font-ibm: "IBM Plex Serif";
+  --font-helvetica: "Helvetica Neue", san-serif;
+  --font-helvetica-bold: "Helvetica Neue bold", san-serif;
+  --font-helvetica-medium: "Helvetica Neue medium", san-serif;
+  --font-helvetica-thin: "Helvetica Neue light", san-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  } */
+}
+
+/* body {
+} */
+/* Add this to your global CSS */
+.hover-only {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.group:hover .hover-only {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-content {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #f7f7f7;
+  /* display: none; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f1b130;
+  border-radius: 14px;
+}
+
+img {
+  border-radius: 0 !important;
+}
+
+/* In your global CSS */
+::placeholder {
+  color: #34393e;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #34393e;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #34393e;
+}
